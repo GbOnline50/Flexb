@@ -9,104 +9,107 @@
     <link rel="stylesheet" type="text/css" href="src/output.css">
     <title>Document</title>
 </head>
+
+
 <body>
-    <div class="">
-    <div class="superinfo">
-        <p>Seg / Sex - 08:00 às 18:00</p>
-        <a href="tel:+551212344321">+55 12 1234-4321</a>
-        <p>Av. Ali Perto, 123, Lá Perto - SLA</p>
+    <div class="bg-blue-forte">
+    <div  class='flex justify-between flex-wrap pt-2 my-0 mx-auto text-white max-w-[960px]'>
+        <p class="m-2">Seg / Sex - 08:00 às 18:00</p>
+        <a class="m-2" href="tel:+551212344321">+55 12 1234-4321</a>
+        <p class="m-2">Av. Ali Perto, 123, Lá Perto - SLA</p>
     </div>
     </div>
 
-    <header class="">
-        <div class="menu">
-            <div class="menu-logo">
+    <header class="bg-blue-fraco ">
+        <div class="flex flex-wrap items-center justify-between text-white max-w-[960px] my-0 mx-auto pr-[10px]">
+            <div class="text-4xl font-bold m-1">
                 <a href="#">FlexBlog</a>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#preco">Preço</a></li>
-                    <li><a href="#qualidade">Qualidade</a></li>
+                <ul class="flex flex-wrap text-xl ">
+                    <li class="p-2.5"><a class=" hover:text-blue-800" href="#sobre">Sobre</a></li>
+                    <li class="p-2.5"><a class=" hover:text-blue-800" href="#produtos">Produtos</a></li>
+                    <li class="p-2.5"><a class=" hover:text-blue-800" href="#preco">Preço</a></li>
+                    <li class="p-2.5"><a class=" hover:text-blue-800" href="#qualidade">Qualidade</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <h1 class="introducao">
+    <h1 class="text-5xl font-bold max-w-[960px] my-0 mx-auto py-10 pr-2.5">
         Novos valores e<br> Propriedades de CSS
     </h1>
 
-    <section class="sobre" id="sobre">
-        <div class="sobre-info">
-            <h1>Sobre</h1>
-            <p>
+    <section class="flex flex-wrap my-0 mx-auto py-14 px-0 max-w-[960px] border-t-2 border-b-2 border-blue-forte" id="sobre">
+        <div class="flex-300 my-0 mx-auto">
+            <h1 class="font-bold text-5xl mb-2 ml-2.5">Sobre</h1>
+            <p class="text-xl mb-4 text-cinza ml-2.5">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam illo corrupti,
                 aut delectus excepturi molestias a dolorem atque deleniti tempora libero ad unde 
                 voluptate, illum iste ducimus sed distinctio amet.
             </p>
-            <p>
+            <p class="text-xl mb-4 ml-2.5 text-cinza">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam nemo quod ipsam 
                 ipsa quasi doloremque soluta incidunt, rem tempore blanditiis optio commodi. 
                 Quam culpa, obcaecati minus nulla iure distinctio?
             </p>
         </div>
-        <div class="sobre-img">
+        <div class="flex-2">
             <img src="assets/sobre1.jpg" alt="Sobre 1">
         </div>
-        <div class="sobre-img">
+        <div class="flex-2">
             <img src="assets/sobre2.jpg" alt="Sobre 2">
         </div>
     </section>
 
-    <section class="produtos" id="produtos">
-        <h1>Produtos</h1>
-        <div class="produtos-container"></div>
-            <div class="produtos-item purple">
-                <h2>Purple</h2>
+    <section class="max-w-[960px] my-0 mx-auto py-14 px-0 " id="produtos">
+        <h1 class="text-5xl mx-[10px] mb-[60px] font-bold">Produtos</h1>
+        <div class="flex flex-wrap gap-4 items-end ml-2.5">
+            <div class="flex-2 border-t-8 border-roxo purple">
+                <h2 class="text-cinza-letra bg-cinza-fundo text-5xl font-bold py-14 px-5">Purple</h2>
                 <img src="assets/produtos1.jpg" alt="Produto 1">
             </div>
-            <div class="produtos-item pink">
-                <h2>Pink</h2>
+            <div class="flex-2 border-t-8 border-pink pink">
+                <h2 class="text-cinza-letra bg-cinza-fundo text-5xl font-bold py-14 px-5">Pink</h2>
                 <img src="assets/produtos2.jpg" alt="Produto 2">
             </div>
-            <div class="produtos-item blue">
-                <h2>Blue</h2>
+            <div class="flex-2 border-t-8 border-azul blue">
+                <h2 class="text-cinza-letra bg-cinza-fundo text-5xl font-bold py-14 px-5">Blue</h2>
                 <img src="assets/produtos3.jpg" alt="Produto 3">
             </div>
+        </div>
     </section>
 
-    <section class="preco" id="preco">
-        <div class="preco-item">
-            <h2>Cobre</h2>
-            <span><sup>R$</sup>19</span>
-        <ul>
+    <section class="flex flex-wrap items-end bg-cinza-fundo p-14" id="preco">
+        <div class="flex-1 bg-cinza-fundo p-5 m-2.5 border-white border-4">
+            <h2 class="text-cinza-letra text-5xl mt-5 text-center">Cobre</h2>
+            <span class="block font-bold text-3xl max-w-[300px] my-5 mx-auto"><sup>R$</sup>19</span>
+        <ul class="text-cinza-letra ">
             <li>Planos Ilimitados</li>
             <li>Acesso Restrito</li>
             <li>Conteúdo Secreto</li>
             <li>Suporte 24h</li>
         </ul>
-        <a href="#">Comprar</a>
+        <a class="border-4 border-black mx-auto self-end" href="#">Comprar</a>
         </div>
 
-        <div class="preco-item">
-            <h2>Prata</h2>
-            <span><sup>R$</sup>39</span>
-        <ul>
+        <div class="flex-1 bg-cinza-fundo p-5 m-5 border-white border-4">
+            <h2 class="text-cinza-letra text-center text-5xl mt-5">Prata</h2>
+            <span class="block font-bold text-3xl max-w-full my-4 border-y-4 mx-auto border-white"><sup>R$</sup>39</span>
+        <ul class="text-cinza-letra ">
             <li>Planos Ilimitados</li>
             <li>Acesso Restrito</li>
             <li>Conteúdo Secreto</li>
             <li>Suporte 24h</li>
             <li>Compra Exclusiva</li>
         </ul>
-        <a href="#">Comprar</a>
+        <a class="border-4 border-black mx-auto self-end" href="#">Comprar</a>
         </div>
 
-        <div class="preco-item">
-            <h2>Ouro</h2>
-            <span><sup>R$</sup>79</span>
-        <ul>
+        <div class="flex-1 bg-cinza-fundo p-5 m-5 border-white border-4">
+            <h2 class="text-cinza-letra text-5xl my-5 mx-auto">Ouro</h2>
+            <span class="block font-bold text-3xl max-w-full my-4 border-y-4 mx-auto border-white"><sup>R$</sup>79</span>
+        <ul class="text-cinza-letra ">
             <li>Planos Ilimitados</li>
             <li>Acesso Restrito</li>
             <li>Conteúdo Secreto</li>
@@ -114,7 +117,7 @@
             <li>Compra Exclusiva</li>
             <li>Download dos Itens</li>
         </ul>
-        <a href="#">Comprar</a>
+        <a class="border-4 border-black mx-auto self-end" href="#">Comprar</a>
         </div>
     </section>
 
@@ -138,7 +141,7 @@
 			<h2>Transparente</h2>
 			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão </p>
 		</div>
-		
+Sustentável		
 		<div class="qualidade-item">
 			<h2>Opaco</h2>
 			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
@@ -155,7 +158,7 @@
 			<h1>Newsletter</h1>
 			<p>assine e fique por dentro das novidades</p>
 		</div>
-		<form class="newsletter-form">
+		<form id="email" class="newsletter-form">
 			<input type="text" placeholder="Seu e-mail">
 			<button type="submit">Assinar</button>
 		</form>
