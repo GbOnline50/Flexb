@@ -11,7 +11,8 @@ module.exports = {
         white: '#ffffff',
         cinza: {
           letra: '#7c7c7c',
-          fundo: '#f7f7f7'
+          fundo: '#f7f7f7',
+          bola: '#2c70ff'
         },
         blue: {
           forte: '#122ab2',
@@ -20,10 +21,14 @@ module.exports = {
         pink: '#f9265e',
         roxo: '#ae81ff',
         azul: '#66d9eb',
+
     },
     flex:{
       '2' : '1 1 160px',
       '300' : '2 1 300px',
+      '3' : '1 1 300px',
+      '4' : '1 1 260px',
+      newsform : '2 1 260px'
     },
   }
   },
